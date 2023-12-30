@@ -1,8 +1,16 @@
+@import "../../app.scss";
+
 .hero {
   height: calc(100vh - 100px);
   overflow: hidden;
   background: linear-gradient(180deg, #0c0c1d, #111132);
   position: relative;
+  width: 100vw;
+  max-width: 100vw;
+
+  @include desktop {
+    padding: 0 20px;
+  }
 
   .wrapper {
     max-width: 1366px;
@@ -16,6 +24,21 @@
       flex-direction: column;
       justify-content: center;
       gap: 40px;
+
+      @include mobile {
+        height: 50%;
+        width: 100%;
+        gap: 20px;
+        align-items: center;
+        text-align: center;
+      }
+      @include tablet {
+        height: 50%;
+        width: 100%;
+        gap: 20px;
+        align-items: center;
+        text-align: center;
+      }
       h2 {
         font-size: 30px;
         color: rebeccapurple;
@@ -24,6 +47,13 @@
 
       h1 {
         font-size: 88px;
+
+        @include mobile {
+          font-size: 36px;
+        }
+        @include tablet {
+          font-size: 40px;
+        }
       }
       .buttons {
         button {
@@ -50,10 +80,28 @@
     top: 0;
     right: 50px;
     width: 500px;
+
+    @include tablet {
+      right: unset;
+      padding: 0 20px;
+    }
     img {
       object-fit: cover;
       width: 100%;
       height: 100%;
+    }
+
+    @include mobile {
+      height: 50%;
+      width: 100%;
+      top: unset;
+      bottom: 0;
+    }
+    @include tablet {
+      height: 50%;
+      width: 100%;
+      top: unset;
+      bottom: 0;
     }
   }
 
