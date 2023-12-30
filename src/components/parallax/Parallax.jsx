@@ -29,7 +29,7 @@ const Parallax = ({ type }) => {
   const yText = useTransform(scrollYProgress, [0, 1], ["0%", "500%"]);
   const yBg = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
   return (
-    <div className="parallax" style={{ background: bg(type) }}>
+    <div className="parallax" style={{ background: bg(type) }} id={type}>
       <motion.h1 style={{ y: yText }}>{h1Text(type)}</motion.h1>
       <motion.div className="mountains"></motion.div>
       <motion.div

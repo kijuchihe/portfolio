@@ -55,18 +55,24 @@ export const Links = () => {
       opacity: 0,
     },
   };
-  const items = ["Homepage", "About", "Services", "Portfolio", "Contact"];
+
+  const items = [
+    { title: "Homepage", id: "/" },
+    { title: "Services", id: "#services" },
+    { title: "Portfolio", id: "#portfolio" },
+    { title: "Contact", id: "#contact" },
+  ];
   return (
     <motion.div className="links" variants={variants}>
       {items.map((item) => (
         <motion.a
-          href={`#${item}`}
-          key={item}
+          href={`${item.id}`}
+          key={item.id}
           variants={itemVariants}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
         >
-          {item}
+          {item.title}
         </motion.a>
       ))}
     </motion.div>

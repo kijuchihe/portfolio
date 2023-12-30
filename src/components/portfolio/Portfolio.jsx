@@ -5,33 +5,31 @@ import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 const items = [
   {
     id: 1,
-    title: "React Commerce",
-    img: "/mountains.png",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed expedita, unde aut culpa corrupti mollitia tempore omnis repudiandae laboriosam quaerat.",
+    title: "Guitar Lessons Page",
+    link: "https://guitar-lessons-page.vercel.app",
+    img: "/project1.png",
+    desc: "Crafted an immersive guitar lessons site using React, focusing on delivering an exceptional UI/UX experience for users seeking to learn guitar. The site emphasizes a visually appealing interface while offering intuitive navigation and engaging content.",
   },
   {
     id: 2,
-    title: "Next.js Commerce",
-    img: "/mountains.png",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed expedita, unde aut culpa corrupti mollitia tempore omnis repudiandae laboriosam quaerat.",
+    title: "MERN Social Media App",
+    link: "https://mern-social-media-frontend1.vercel.app",
+    img: "/project2.png",
+    desc: "Created a dynamic social media platform leveraging the MERN stack, delivering a seamless user experience with secure authentication, personalized profiles, real-time updates, and interactive post features. The platform enables users to connect, share content, and engage with others effortlessly.",
   },
   {
     id: 3,
-    title: "Vanilla JS App",
-    img: "/mountains.png",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed expedita, unde aut culpa corrupti mollitia tempore omnis repudiandae laboriosam quaerat.",
+    title: "Django Combination",
+    link: "https://django-combinator.onrender.com",
+    img: "/project3.png",
+    desc: "Developed a dynamic web application using Django and Python, specialized in generating combinations of numbers and words. Leveraging Bootstrap, the site boasts a polished and responsive interface, showcasing a seamless blend of functionality and design for users to explore various combinations effortlessly.",
   },
   {
     id: 4,
-    title: "Music App",
-    img: "/mountains.png",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed expedita, unde aut culpa corrupti mollitia tempore omnis repudiandae laboriosam quaerat.",
-  },
-  {
-    id: 5,
-    title: "Music App",
-    img: "/mountains.png",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed expedita, unde aut culpa corrupti mollitia tempore omnis repudiandae laboriosam quaerat.",
+    title: "HTML Netflix Clone",
+    link: "https://html-netflix-landing-page.vercel.app",
+    img: "/project4.png",
+    desc: "Recreated the Netflix landing page with HTML, CSS, and JavaScript, showcasing an impressive replica while introducing enhanced functionalities like tab switching. The project prioritized a captivating UI/UX design, demonstrating skills in front-end development and interaction design.",
   },
 ];
 
@@ -53,7 +51,9 @@ const Single = ({ item }) => {
           <motion.div className="textContainer" style={{ y }}>
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
-            <button>See Demo</button>
+            <a href={item.link} className="button">
+              See Demo
+            </a>
           </motion.div>
         </div>
       </div>

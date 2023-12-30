@@ -1,6 +1,9 @@
 import { useRef } from "react";
 import "./contact.scss";
 import { motion, useInView } from "framer-motion";
+import EmailIcon from "../icons/EmailIcon";
+import LocationIcon from "../icons/LocationIcon";
+import PhoneIcon from "../icons/PhoneIcon";
 const variants = {
   initial: {
     y: 500,
@@ -26,21 +29,30 @@ const Contact = () => {
       variants={variants}
       initial="initial"
       whileInView={"animate"}
+      id="contact"
     >
       <motion.div className="textContainer" variants={variants}>
         <motion.h1 variants={variants}>Let's Work Together</motion.h1>
         <motion.div className="item" variants={variants}>
-          <h2>Mail</h2>
-          <span>kingiheme200@gmail.com</span>
+          <h2>
+            <EmailIcon /> Mail
+          </h2>
+          <a href="mailto:kingiheme2005@gmail.com?subject='Sending a message from your website!'">
+            kingiheme2005@gmail.com
+          </a>
         </motion.div>
 
         <motion.div className="item" variants={variants}>
-          <h2>Phone</h2>
-          <span>kingiheme200@gmail.com</span>
+          <h2>
+            <PhoneIcon /> Phone
+          </h2>
+          <a href="tel:+2349035810428">+2349035810428</a>
         </motion.div>
         <motion.div className="item" variants={variants}>
-          <h2>Address</h2>
-          <span>kingiheme200@gmail.com</span>
+          <h2>
+            <LocationIcon /> Location
+          </h2>
+          <span>Lagos, Nigeria</span>
         </motion.div>
       </motion.div>
       <div className="formContainer">

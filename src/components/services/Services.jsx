@@ -22,13 +22,28 @@ const variants = {
 const services = [
   {
     id: 1,
-    title: "Branding",
-    desc: "Lorem ipsum dolor sit amet consectetu dadipisicing elit. Harum velit ipsa quasi explicabo expedita mollitia, impedit repellat quo omnis animi.",
+    title: "Full-Stack Development",
+    desc: "I provide comprehensive end-to-end development services, proficiently handling both front-end and back-end aspects of software systems. My expertise lies in designing, building, and maintaining entire software architectures, ensuring seamless integration between components, databases, servers, and user interfaces.",
     btnText: "Go",
   },
-  { id: 2, title: "Branding", desc: "lorem20", btnText: "Go" },
-  { id: 3, title: "Branding", desc: "lorem20", btnText: "Go" },
-  { id: 4, title: "Branding", desc: "lorem20", btnText: "Go" },
+  {
+    id: 2,
+    title: "Technical Problem-Solving",
+    desc: "As a full-stack engineer, I excel in resolving complex technical issues that arise within the software or applications I work on. My analytical thinking and debugging skills enable me to quickly identify and solve problems, ensuring smooth operation and minimizing any downtime.",
+    btnText: "Go",
+  },
+  {
+    id: 3,
+    title: "Optimising Performance and Scalability",
+    desc: "I specialize in optimizing application performance and scalability. I meticulously optimize code, fine-tune database structures, and configure servers to enhance speed, efficiency, and responsiveness. My strategies focus on ensuring that the system efficiently handles increased user loads or data volumes.",
+    btnText: "Go",
+  },
+  {
+    id: 4,
+    title: "Collaboration and Communication",
+    desc: "I am adept at collaborating with diverse teams, stakeholders, and clients. I effectively communicate technical concepts to non-technical stakeholders, gather requirements, and collaborate seamlessly with designers, front-end developers, and other team members. My goal is to ensure alignment and successful project execution.",
+    btnText: "Go",
+  },
 ];
 const Services = () => {
   const ref = useRef();

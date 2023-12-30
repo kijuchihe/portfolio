@@ -16,6 +16,11 @@
       font-size: 100px;
       line-height: 88px;
     }
+    h2 {
+      display: flex;
+      align-items: center;
+      row-gap: 4px;
+    }
 
     span {
       font-weight: 300;

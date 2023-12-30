@@ -17,17 +17,17 @@ const Navbar = () => {
           Kingsley Ihemelandu
         </motion.span>
         <div className="social">
-          <a href="#">
-            <img src="/facebook.png" alt="" />
+          <a href="https://twitter.com/kijuchihe">
+            <img src="/twitter.png" alt="" />
           </a>
-          <a href="">
+          <a href="https://linkedin.com/in/kijuchihe">
+            <img src="/linkedin.png" alt="LinkedIn Icon" />
+          </a>
+          <a href="https://github.com/kijuchihe">
+            <img src="/github.png" alt="" />
+          </a>
+          <a href="https://instagram.com/kijuchihe">
             <img src="/instagram.png" alt="" />
-          </a>
-          <a href="">
-            <img src="/youtube.png" alt="" />
-          </a>
-          <a href="">
-            <img src="/dribbble.png" alt="" />
           </a>
         </div>
       </div>
