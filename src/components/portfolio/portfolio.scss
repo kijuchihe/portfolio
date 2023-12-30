@@ -36,7 +36,6 @@
     justify-content: center;
     width: 100%;
     height: 100%;
-    // background: red;
     overflow: hidden;
     padding: 10px;
 
@@ -53,7 +52,6 @@
       @include desktop {
         flex-direction: column;
         align-items: center;
-        // background: #000;
       }
       .imageContainer {
         flex: 1;

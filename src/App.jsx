@@ -15,7 +15,7 @@ const App = () => {
         <Navbar />
         <Hero />
       </section>
-      <section>
+      <section style={{ maxWidth: "100vw" }}>
         <Parallax type={"services"} />
       </section>
       <section>

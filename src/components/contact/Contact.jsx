@@ -23,16 +23,16 @@ const Contact = () => {
   const ref = useRef();
   const isInView = useInView(ref, { margin: "-100px" });
   return (
-    <motion.div className="contact">
-      <motion.div
-        className="container"
-        ref={ref}
-        // className="contact"
-        variants={variants}
-        initial="initial"
-        whileInView={"animate"}
-        id="contact"
-      >
+    <motion.div
+      className="contact"
+      ref={ref}
+      // className="contact"
+      variants={variants}
+      initial="initial"
+      whileInView={"animate"}
+      id="contact"
+    >
+      <motion.div className="container">
         <motion.div className="textContainer" variants={variants}>
           <motion.h1 variants={variants}>Let's Work Together</motion.h1>
           <motion.div className="item" variants={variants}>
