@@ -5,8 +5,8 @@
   overflow: hidden;
   background: linear-gradient(180deg, #0c0c1d, #111132);
   position: relative;
-  width: 100vw;
-  max-width: 100vw;
+  // width: 100vw;
+  // max-width: 100vw;
 
   @include desktop {
     padding: 0 20px;
@@ -41,7 +41,7 @@
       }
       h2 {
         font-size: 30px;
-        color: rebeccapurple;
+        color: #663399;
         letter-spacing: 10px;
       }
 
@@ -82,7 +82,8 @@
     width: 500px;
 
     @include tablet {
-      right: unset;
+      // right: unset;
+      right: 0px;
       padding: 0 20px;
     }
     img {

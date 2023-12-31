@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./sidebar.scss";
+// import "./sidebar.scss";
 import { motion } from "framer-motion";
 const Sidebar = () => {
   const [open, setOpen] = useState(false);
@@ -22,8 +22,14 @@ const Sidebar = () => {
     },
   };
   return (
-    <motion.div className="sidebar" animate={open ? "open" : "closed"}>
-      <motion.div className="bg" variants={variants}>
+    <motion.div
+      className="flex flex-col items-center justify-center bg-white"
+      animate={open ? "open" : "closed"}
+    >
+      <motion.div
+        className="fixed top-0 bottom-0 left-0 w-[200px] md:w-[300px] bg-white z-50 h-full"
+        variants={variants}
+      >
         <Links />
       </motion.div>
       <ToggleButton setOpen={setOpen} />
@@ -63,7 +69,10 @@ export const Links = () => {
     { title: "Contact", id: "#contact" },
   ];
   return (
-    <motion.div className="links" variants={variants}>
+    <motion.div
+      className="absolute flex flex-col items-center justify-center w-full h-full text-base text-black md:text-2xl"
+      variants={variants}
+    >
       {items.map((item) => (
         <motion.a
           href={`${item.id}`}
@@ -80,7 +89,10 @@ export const Links = () => {
 };
 export const ToggleButton = ({ setOpen }) => {
   return (
-    <button onClickCapture={() => setOpen((prev) => !prev)}>
+    <button
+      onClickCapture={() => setOpen((prev) => !prev)}
+      className="z-50 w-[50px] h-[50px] rounded-full fixed top-[25px] left-[38px] bg-transparent cursor-pointer"
+    >
       <svg width={23} height={23} viewBox="0 0 23 23">
         <motion.path
           strokeWidth={3}

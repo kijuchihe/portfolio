@@ -5,29 +5,31 @@ import Hero from "./components/hero/Hero";
 import Navbar from "./components/navbar/Navbar";
 import Parallax from "./components/parallax/Parallax";
 import Portfolio from "./components/portfolio/Portfolio";
+import Section from "./components/section/Section";
 import Services from "./components/services/Services";
 
 const App = () => {
   return (
     <div>
       <Cursor />
-      <section>
+      <Section>
         <Navbar />
         <Hero />
-      </section>
-      <section style={{ maxWidth: "100vw" }}>
+      </Section>
+      <Section>
         <Parallax type={"services"} />
-      </section>
-      <section>
+      </Section>
+      <Section>
         <Services />
-      </section>
-      <section>
+      </Section>
+      <Section>
         <Parallax type={"portfolio"} />
-      </section>
+      </Section>
       <Portfolio />
-      <section>
+      <Section>
         <Contact />
-      </section>
+      </Section>
+      <section className="snap-center h-[100px] lg:hidden"></section>
     </div>
   );
 };

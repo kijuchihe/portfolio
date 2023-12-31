@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./cursor.scss";
+// import "./cursor.scss";
 import { motion } from "framer-motion";
 
 const Cursor = () => {
@@ -19,7 +19,7 @@ const Cursor = () => {
 
   return (
     <motion.div
-      className="cursor"
+      className="hidden lg:block w-[50px] h-[50px] rounded-full fixed z-50"
       animate={{ x: position.x + 10, y: position.y + 10 }}
     ></motion.div>
   );

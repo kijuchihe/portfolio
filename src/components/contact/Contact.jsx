@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import "./contact.scss";
+// import "./contact.scss";
 import { motion, useInView } from "framer-motion";
 import EmailIcon from "../icons/EmailIcon";
 import LocationIcon from "../icons/LocationIcon";
@@ -32,34 +32,56 @@ const Contact = () => {
       whileInView={"animate"}
       id="contact"
     >
-      <motion.div className="container">
-        <motion.div className="textContainer" variants={variants}>
-          <motion.h1 variants={variants}>Let's Work Together</motion.h1>
-          <motion.div className="item" variants={variants}>
-            <h2>
+      <motion.div className="h-full w-full px-2 max-w-[1366px] mx-auto flex items-center gap-12 lg:px-5 flex-col md:flex-row md:pt-16 ">
+        <motion.div
+          className="flex flex-col items-center flex-1 gap-5 mt-16 text-center lg:gap-10"
+          variants={variants}
+        >
+          <motion.h1
+            variants={variants}
+            className="text-5xl font-bold leading-10 lg:text-6xl md:text-4xl"
+          >
+            Let's Work Together
+          </motion.h1>
+          <motion.div
+            className="flex flex-col items-start w-full"
+            variants={variants}
+          >
+            <h2 className="flex items-start md:items-center gap-x-1">
               <EmailIcon /> Mail
             </h2>
-            <a href="mailto:kingiheme2005@gmail.com?subject='Sending a message from your website!'">
+            <a
+              href="mailto:kingiheme2005@gmail.com?subject='Sending a message from your website!'"
+              className="font-light"
+            >
               kingiheme2005@gmail.com
             </a>
           </motion.div>
 
-          <motion.div className="item" variants={variants}>
-            <h2>
+          <motion.div
+            variants={variants}
+            className="flex flex-col items-start w-full"
+          >
+            <h2 className="flex items-start md:items-center gap-x-1">
               <PhoneIcon /> Phone
             </h2>
-            <a href="tel:+2349035810428">+2349035810428</a>
+            <a href="tel:+2349035810428" className="font-light">
+              +2349035810428
+            </a>
           </motion.div>
-          <motion.div className="item" variants={variants}>
-            <h2>
+          <motion.div
+            className="flex flex-col items-start w-full"
+            variants={variants}
+          >
+            <h2 className="flex items-start md:items-center gap-x-1">
               <LocationIcon /> Location
             </h2>
-            <span>Lagos, Nigeria</span>
+            <span className="font-light">Lagos, Nigeria</span>
           </motion.div>
         </motion.div>
-        <div className="formContainer">
+        <div className="relative flex-1 p-[50px] md:p-0 w-full md:w-auto">
           <motion.div
-            className="phoneSvg"
+            className="absolute m-auto stroke-orange-500 -z-10"
             initial={{ opacity: 1 }}
             whileInView={{ opacity: 0 }}
             transition={{ delay: 3, duration: 1 }}
@@ -80,17 +102,31 @@ const Contact = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ delay: 4, duration: 1 }}
+            className="flex flex-col gap-5"
           >
-            <input type="text" required placeholder="Name" />
-            <input type="email" required placeholder="Email" />
+            <input
+              type="text"
+              required
+              placeholder="Name"
+              className="p-2 text-white bg-transparent border border-white rounded-md lg:p-3"
+            />
+            <input
+              type="email"
+              required
+              placeholder="Email"
+              className="p-2 text-white bg-transparent border border-white rounded-md lg:p-3"
+            />
             <textarea
               name=""
               id=""
               cols="30"
               rows="10"
               placeholder="Message"
+              className="p-2 text-white bg-transparent border border-white rounded-md lg:p-3"
             ></textarea>
-            <button>Submit</button>
+            <button className="p-2 font-medium bg-orange-500 border-none cursor-pointer md:p-3">
+              Submit
+            </button>
           </motion.form>
         </div>
       </motion.div>

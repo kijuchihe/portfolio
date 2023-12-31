@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import "./parallax.scss";
+// import "./parallax.scss";
 import { motion, useScroll, useTransform } from "framer-motion";
 const h1Text = (type) => {
   if (type === "services") {
@@ -30,23 +30,33 @@ const Parallax = ({ type }) => {
   const yBg = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
   return (
     <div
-      className="parallax"
+      className="relative flex items-center justify-center w-full h-screen overflow-hidden"
       style={{ background: bg(type) }}
       id={type}
       ref={ref}
     >
-      <motion.h1 style={{ y: yText }}>{h1Text(type)}</motion.h1>
-      <motion.div className="mountains"></motion.div>
+      <motion.h1
+        style={{ y: yText }}
+        className="z-40 text-3xl lg:text-8xl md:text-5xl"
+      >
+        {h1Text(type)}
+      </motion.h1>
+      <motion.div className="bg-[url('/mountains.png')] bg-cover bg-bottom w-full h-full absolute z-30 bg-no-repeat"></motion.div>
       <motion.div
-        className="planets"
+        //
+        className={`${
+          type === "services"
+            ? "bg-[url('/planets.png')]"
+            : "bg-[url('/sun.png')]"
+        }  bg-cover bg-bottom w-full h-full absolute z-20`}
         style={{
           y: yBg,
-          backgroundImage: `url(${
-            type === "services" ? "/planets.png" : "/sun.png"
-          })`,
         }}
       ></motion.div>
-      <motion.div style={{ x: yBg }} className="stars"></motion.div>
+      <motion.div
+        style={{ x: yBg }}
+        className="bg-[url('/stars.png')] bg-cover bg-bottom w-full h-full absolute z-10"
+      ></motion.div>
     </div>
   );
 };

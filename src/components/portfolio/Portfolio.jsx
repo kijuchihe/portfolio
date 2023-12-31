@@ -1,6 +1,7 @@
 import { useRef } from "react";
-import "./portfolio.scss";
+// import "./portfolio.scss";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
+import Section from "../section/Section";
 
 const items = [
   {
@@ -39,25 +40,36 @@ const Single = ({ item }) => {
     target: ref,
   });
 
-  const y = useTransform(scrollYProgress, [0, 1], [-500, 500]);
+  const y = useTransform(scrollYProgress, [0, 1], [-100, 100]);
+  const mdy = useTransform(scrollYProgress, [0, 1], [-500, 500]);
   return (
-    <section>
-      <div className="container">
-        <div className="wrapper">
-          <div className="imageContainer" ref={ref}>
-            <img src={item.img} alt="" />
+    <Section>
+      <div className="w-full h-full p-3 overflow-hidden ">
+        <div className="max-w-[1366px] w-full h-full mx-auto flex items-center justify-center gap-20 md:gap-12 flex-col md:flex-row">
+          <div className="flex-1 w-full h-1/2 max-h-[300px]" ref={ref}>
+            <img
+              src={item.img}
+              alt=""
+              className="object-contain w-full h-full lg:object-cover"
+            />
           </div>
 
-          <motion.div className="textContainer" style={{ y }}>
-            <h2>{item.title}</h2>
-            <p>{item.desc}</p>
-            <a href={item.link} className="button">
+          <motion.div
+            className="flex flex-col items-center flex-1 p-2 text-center md:p-0 gap-7 transform-none md:transform-cpu "
+            style={{ y: screen.width > 768 ? mdy : y }}
+          >
+            <h2 className="text-3xl md:text-5xl">{item.title}</h2>
+            <p className="text-sm text-gray-500 md:text-xl">{item.desc}</p>
+            <a
+              href={item.link}
+              className="bg-orange-500 border-none rounded-md p-3 w-[200px] cursor-pointer"
+            >
               See Demo
             </a>
           </motion.div>
         </div>
       </div>
-    </section>
+    </Section>
   );
 };
 
@@ -70,10 +82,13 @@ const Portfolio = () => {
 
   const scaleX = useSpring(scrollYProgress, { stiffness: 100, damping: 30 });
   return (
-    <div className="portfolio" ref={ref}>
-      <div className="progress">
+    <div className="relative" ref={ref}>
+      <div className="sticky top-0 left-0 lg:pt-12 text-4xl text-center text-orange-500 md:text-5xl lg:text-6xl pt-[calc(100vh-70px)] font-bold ">
         <h1>Featured Works</h1>
-        <motion.div style={{ scaleX }} className="progressBar"></motion.div>
+        <motion.div
+          style={{ scaleX }}
+          className="h-[10px] bg-white"
+        ></motion.div>
       </div>
       {items.map((item) => (
         <Single item={item} key={item.id} />
