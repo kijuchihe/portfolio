@@ -82,7 +82,7 @@ const Portfolio = () => {
 
   const scaleX = useSpring(scrollYProgress, { stiffness: 100, damping: 30 });
   return (
-    <div className="relative" ref={ref}>
+    <div className="relative h-fit" ref={ref}>
       <div className="sticky top-0 left-0 w-full pt-12 text-4xl font-bold text-center text-orange-500 md:text-5xl lg:text-6xl ">
         <h1>Featured Works</h1>
         <motion.div
