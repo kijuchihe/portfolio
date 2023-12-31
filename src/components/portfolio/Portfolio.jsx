@@ -40,7 +40,7 @@ const Single = ({ item }) => {
     target: ref,
   });
 
-  const y = useTransform(scrollYProgress, [0, 1], [-100, 100]);
+  const y = useTransform(scrollYProgress, [0, 1], [-50, 50]);
   const mdy = useTransform(scrollYProgress, [0, 1], [-500, 500]);
   return (
     <Section>
@@ -56,7 +56,7 @@ const Single = ({ item }) => {
 
           <motion.div
             className="flex flex-col items-center flex-1 p-2 text-center md:p-0 gap-7 transform-none md:transform-cpu "
-            style={{ y: screen.width > 768 ? mdy : y }}
+            style={{ y: screen.width > 768 && mdy }}
           >
             <h2 className="text-3xl md:text-5xl">{item.title}</h2>
             <p className="text-sm text-gray-500 md:text-xl">{item.desc}</p>
@@ -83,7 +83,7 @@ const Portfolio = () => {
   const scaleX = useSpring(scrollYProgress, { stiffness: 100, damping: 30 });
   return (
     <div className="relative" ref={ref}>
-      <div className="sticky top-0 left-0 lg:pt-12 text-4xl text-center text-orange-500 md:text-5xl lg:text-6xl pt-[calc(100vh-70px)] font-bold ">
+      <div className="sticky top-0 left-0 w-full pt-12 text-4xl font-bold text-center text-orange-500 md:text-5xl lg:text-6xl ">
         <h1>Featured Works</h1>
         <motion.div
           style={{ scaleX }}
