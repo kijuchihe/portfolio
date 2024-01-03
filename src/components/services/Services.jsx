@@ -58,13 +58,13 @@ const Services = () => {
       ref={ref}
     >
       <motion.div
-        className="flex self-center flex-1 gap-5 text-center lg:self-end center"
+        className="flex self-end flex-1 gap-5 text-center align-middle lg:self-end center max-h-[70px] mb-8 items-center"
         variants={variants}
       >
-        <p className="text-xl text-right text-gray-500 font-extralight">
+        <p className="text-base text-right text-gray-500 md:text-xl font-extralight">
           I focus on helping your brand grow <br /> and move forward
         </p>
-        <hr className="w-[300px] md:w-[400px] lg:w-[500px] border-t-[0.5px] border-t-gray-500" />
+        <hr className="w-[10px] sm:w-[100px] md:w-[300px] lg:w-[500px] border-t-[0.5px] border-t-gray-500" />
       </motion.div>
       <motion.div className="flex-[2] flex flex-col items-center w-full md:w-auto">
         <div className="flex flex-col items-center gap-10 text-center lg:gap-12 lg:flex-row">

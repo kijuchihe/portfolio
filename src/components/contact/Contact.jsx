@@ -44,7 +44,7 @@ const Contact = () => {
             Let's Work Together
           </motion.h1>
           <motion.div
-            className="flex flex-col items-start w-full"
+            className="flex flex-col items-center w-full"
             variants={variants}
           >
             <h2 className="flex items-center gap-x-1">
@@ -60,7 +60,7 @@ const Contact = () => {
 
           <motion.div
             variants={variants}
-            className="flex flex-col items-start w-full"
+            className="flex flex-col items-center w-full"
           >
             <h2 className="flex items-start md:items-center gap-x-1">
               <PhoneIcon /> Phone
@@ -70,7 +70,7 @@ const Contact = () => {
             </a>
           </motion.div>
           <motion.div
-            className="flex flex-col items-start w-full"
+            className="flex flex-col items-center w-full"
             variants={variants}
           >
             <h2 className="flex items-start md:items-center gap-x-1">
@@ -79,7 +79,7 @@ const Contact = () => {
             <span className="font-light">Lagos, Nigeria</span>
           </motion.div>
         </motion.div>
-        <div className="relative flex-1 p-[50px] md:p-0 w-full md:w-auto">
+        <div className="relative flex-1 p-[50px] md:p-0 w-full md:w-auto lg:mt-10">
           <motion.div
             className="absolute m-auto stroke-orange-500 -z-10"
             initial={{ opacity: 1 }}

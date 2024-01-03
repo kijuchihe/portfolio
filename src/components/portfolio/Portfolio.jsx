@@ -40,12 +40,12 @@ const Single = ({ item }) => {
     target: ref,
   });
 
-  const y = useTransform(scrollYProgress, [0, 1], [-50, 50]);
+  const y = useTransform(scrollYProgress, [0, 1], [0, 0]);
   const mdy = useTransform(scrollYProgress, [0, 1], [-500, 500]);
   return (
     <Section>
       <div className="w-full h-full p-3 overflow-hidden ">
-        <div className="max-w-[1366px] w-full h-full mx-auto flex items-center justify-center gap-20 md:gap-12 flex-col md:flex-row">
+        <div className="max-w-[1366px] w-full h-full mx-auto flex items-center justify-center gap-5 md:gap-12 flex-col md:flex-row">
           <div className="flex-1 w-full h-1/2 max-h-[300px]" ref={ref}>
             <img
               src={item.img}
