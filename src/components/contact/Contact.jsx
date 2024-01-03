@@ -47,7 +47,7 @@ const Contact = () => {
             className="flex flex-col items-start w-full"
             variants={variants}
           >
-            <h2 className="flex items-start md:items-center gap-x-1">
+            <h2 className="flex items-center gap-x-1">
               <EmailIcon /> Mail
             </h2>
             <a

@@ -5,9 +5,9 @@ import Sidebar from "../sidebar/Sidebar";
 
 const Navbar = () => {
   return (
-    <nav className="h-[100px]">
+    <nav className="h-[100px] px-4">
       <Sidebar />
-      <div className="w-full max-w-[1366px] flex items-center justify-end h-full">
+      <div className="w-full max-w-[1366px] flex items-center justify-end h-full lg:justify-between">
         <motion.span
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
