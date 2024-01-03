@@ -29,7 +29,6 @@ const App = () => {
       <Section>
         <Contact />
       </Section>
-      <section className="snap-center h-[100px] lg:hidden"></section>
     </div>
   );
 };
