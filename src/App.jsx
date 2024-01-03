@@ -1,3 +1,4 @@
+import { Toaster } from "react-hot-toast";
 import "./app.scss";
 import Contact from "./components/contact/Contact";
 import Cursor from "./components/cursor/Cursor";
@@ -29,6 +30,7 @@ const App = () => {
       <Section>
         <Contact />
       </Section>
+      <Toaster />
     </div>
   );
 };

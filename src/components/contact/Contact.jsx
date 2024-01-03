@@ -1,9 +1,11 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 // import "./contact.scss";
 import { motion, useInView } from "framer-motion";
 import EmailIcon from "../icons/EmailIcon";
 import LocationIcon from "../icons/LocationIcon";
 import PhoneIcon from "../icons/PhoneIcon";
+import emailjs from "@emailjs/browser";
+import toast from "react-hot-toast";
 const variants = {
   initial: {
     y: 500,
@@ -20,8 +22,41 @@ const variants = {
 };
 
 const Contact = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
   const ref = useRef();
+  const formRef = useRef();
   const isInView = useInView(ref, { margin: "-100px" });
+
+  const clearForm = () => {
+    setEmail("");
+    setMessage("");
+    setName("");
+  };
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_kci0c3t",
+        "template_kbyh4uo",
+        formRef.current,
+        "-NO5NqueOu03BYjCu"
+      )
+      .then(
+        (result) => {
+          toast.success("Successfully sent email!");
+        },
+        (error) => {
+          toast.error("There was an error sending the email!");
+        }
+      )
+      .finally(() => {
+        clearForm();
+      });
+  };
   return (
     <motion.div
       className="contact"
@@ -103,28 +138,47 @@ const Contact = () => {
             whileInView={{ opacity: 1 }}
             transition={{ delay: 4, duration: 1 }}
             className="flex flex-col gap-5"
+            ref={formRef}
+            onSubmit={sendEmail}
           >
             <input
               type="text"
               required
+              name="user_name"
               placeholder="Name"
               className="p-2 text-white bg-transparent border border-white rounded-md lg:p-3"
+              value={name}
+              onChange={(e) => {
+                setName(e.target.value);
+              }}
             />
             <input
               type="email"
               required
               placeholder="Email"
+              name="user_email"
               className="p-2 text-white bg-transparent border border-white rounded-md lg:p-3"
+              value={email}
+              onChange={(e) => {
+                setEmail(e.target.value);
+              }}
             />
             <textarea
-              name=""
+              name="message"
               id=""
               cols="30"
               rows="10"
               placeholder="Message"
               className="p-2 text-white bg-transparent border border-white rounded-md lg:p-3"
+              value={message}
+              onChange={(e) => {
+                setMessage(e.target.value);
+              }}
             ></textarea>
-            <button className="p-2 font-medium bg-orange-500 border-none cursor-pointer md:p-3">
+            <button
+              className="p-2 font-medium bg-orange-500 border-none cursor-pointer md:p-3"
+              type="submit"
+            >
               Submit
             </button>
           </motion.form>
