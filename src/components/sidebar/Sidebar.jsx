@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 const Sidebar = () => {
   const [open, setOpen] = useState(false);
+
   const variants = {
     closed: {
       clipPath: "circle(30px at 50px 50px)",
@@ -30,14 +31,14 @@ const Sidebar = () => {
         className="fixed top-0 bottom-0 left-0 w-[200px] md:w-[300px] bg-white z-50 h-full"
         variants={variants}
       >
-        <Links />
+        <Links setOpen={setOpen} />
       </motion.div>
       <ToggleButton setOpen={setOpen} />
     </motion.div>
   );
 };
 
-export const Links = () => {
+export const Links = ({ setOpen }) => {
   const variants = {
     open: {
       transition: {
@@ -80,6 +81,10 @@ export const Links = () => {
           variants={itemVariants}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
+          onClick={() => {
+            setOpen(false);
+            console.log("Clicked", item);
+          }}
         >
           {item.title}
         </motion.a>
