@@ -2,34 +2,35 @@ import { useRef } from "react";
 // import "./portfolio.scss";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import Section from "../section/Section";
+import images from "../images";
 
 const items = [
   {
     id: 1,
     title: "Guitar Lessons Page",
     link: "https://guitar-lessons-page.vercel.app",
-    img: "/project1.png",
+    img: images.project1,
     desc: "Crafted an immersive guitar lessons site using React, focusing on delivering an exceptional UI/UX experience for users seeking to learn guitar. The site emphasizes a visually appealing interface while offering intuitive navigation and engaging content.",
   },
   {
     id: 2,
     title: "MERN Social Media App",
     link: "https://mern-social-media-frontend1.vercel.app",
-    img: "/project2.png",
+    img: images.project2,
     desc: "Created a dynamic social media platform leveraging the MERN stack, delivering a seamless user experience with secure authentication, personalized profiles, real-time updates, and interactive post features. The platform enables users to connect, share content, and engage with others effortlessly.",
   },
   {
     id: 3,
     title: "Django Combination",
     link: "https://django-combinator.onrender.com",
-    img: "/project3.png",
+    img: images.project3,
     desc: "Developed a dynamic web application using Django and Python, specialized in generating combinations of numbers and words. Leveraging Bootstrap, the site boasts a polished and responsive interface, showcasing a seamless blend of functionality and design for users to explore various combinations effortlessly.",
   },
   {
     id: 4,
     title: "HTML Netflix Clone",
     link: "https://html-netflix-landing-page.vercel.app",
-    img: "/project4.png",
+    img: images.project4,
     desc: "Recreated the Netflix landing page with HTML, CSS, and JavaScript, showcasing an impressive replica while introducing enhanced functionalities like tab switching. The project prioritized a captivating UI/UX design, demonstrating skills in front-end development and interaction design.",
   },
 ];

@@ -1,6 +1,7 @@
 import { useRef } from "react";
 // import "./parallax.scss";
 import { motion, useScroll, useTransform } from "framer-motion";
+import images from "../images";
 const h1Text = (type) => {
   if (type === "services") {
     return "What I Do";
@@ -41,13 +42,13 @@ const Parallax = ({ type }) => {
       >
         {h1Text(type)}
       </motion.h1>
-      <motion.div className="bg-[url('/mountains.png')] bg-cover bg-bottom w-full h-full absolute z-30 bg-no-repeat"></motion.div>
+      <motion.div className="bg-[url('https://res.cloudinary.com/kmavi/image/upload/v1704288713/kijuchihe/images/portfolio/mountains_vhulyr.png')] bg-cover bg-bottom w-full h-full absolute z-30 bg-no-repeat"></motion.div>
       <motion.div
         //
         className={`${
           type === "services"
-            ? "bg-[url('/planets.png')]"
-            : "bg-[url('/sun.png')]"
+            ? `bg-[url('https://res.cloudinary.com/kmavi/image/upload/v1704288704/kijuchihe/images/portfolio/planets_okrz8b.png')]`
+            : `bg-[url('https://res.cloudinary.com/kmavi/image/upload/v1704288696/kijuchihe/images/portfolio/sun_ettyfe.png')]`
         }  bg-cover bg-bottom w-full h-full absolute z-20`}
         style={{
           y: yBg,
@@ -55,7 +56,7 @@ const Parallax = ({ type }) => {
       ></motion.div>
       <motion.div
         style={{ x: yBg }}
-        className="bg-[url('/stars.png')] bg-cover bg-bottom w-full h-full absolute z-10"
+        className={`bg-[url('https://res.cloudinary.com/kmavi/image/upload/v1704288696/kijuchihe/images/portfolio/stars_fbj6yt.png')] bg-cover bg-bottom w-full h-full absolute z-10`}
       ></motion.div>
     </div>
   );

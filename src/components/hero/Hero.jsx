@@ -1,6 +1,7 @@
 import React from "react";
 // import "./hero.scss";
 import { motion } from "framer-motion";
+import images from "../images";
 const textVariants = {
   initial: {
     x: -500,
@@ -96,7 +97,7 @@ const Hero = () => {
           Writer Content Creator Influencer
         </motion.div>
         <div className="w-full sm:w-3/4 md:w-1/2">
-          <img src="/hero.jpg" alt="" />
+          <img src={images.hero} alt="" />
         </div>
       </div>
     </div>
