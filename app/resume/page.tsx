@@ -5,7 +5,7 @@ import {
   FaCss3,
   FaJs,
   FaReact,
-  FaFigma,
+  // FaFigma,
   FaNodeJs,
 } from "react-icons/fa";
 import {
@@ -14,6 +14,7 @@ import {
   SiNextdotjs,
   SiAmazonaws,
   SiDocker,
+  SiPython
 } from "react-icons/si";
 
 // about data
@@ -85,11 +86,12 @@ const skills = {
     { icon: <FaHtml5 />, name: "HTML5" },
     { icon: <FaCss3 />, name: "CSS3" },
     { icon: <FaJs />, name: "JavaScript" },
-    { icon: <FaReact />, name: "React" },
-    { icon: <FaFigma />, name: "Figma" },
-    { icon: <FaNodeJs />, name: "Node.js" },
+    { icon: <SiPython />, name: "Python" },
+    { icon: <FaReact />, name: "ReactJS" },
+    // { icon: <FaFigma />, name: "Figma" },
+    { icon: <FaNodeJs />, name: "NodeJS" },
     { icon: <SiTailwindcss />, name: "Tailwind CSS" },
-    { icon: <SiDjango />, name: "Django" },
+    // { icon: <SiDjango />, name: "Django" },
     { icon: <SiNextdotjs />, name: "Next.js" },
     { icon: <SiAmazonaws />, name: "Amazon Web Services" },
     { icon: <SiDocker />, name: "Docker" },

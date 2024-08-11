@@ -22,36 +22,60 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
   {
     num: "01",
-    category: "frontend",
-    title: "project 1",
+    category: "Frontend",
+    title: "CyberPatron",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum beatae doloremque iste?",
-    stack: [{ name: "Html 5" }, { name: "Html 5" }, { name: "Javascript" }],
+      "CyberPatron is a cybersecurity firm website built with Next.js and Framer Motion. I implemented clean code practices to ensure maintainability and scalability.",
+    stack: [
+      { name: "Next.js" },
+      { name: "Framer Motion" },
+      { name: "TypeScript" },
+    ],
     image: "/assets/work/project1.png",
-    live: "",
+    live: "https://www.thecyberpatron.com",
     github: "",
   },
   {
     num: "02",
-    category: "fullstack",
-    title: "project 2",
-    description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum beatae doloremque iste?",
-    stack: [{ name: "Html 5" }, { name: "Html 5" }, { name: "Javascript" }],
+    category: "Fullstack",
+    title: "GroupGo",
+    description: "This is a ticket ordering and buying site with real time payment being possible",
+    stack: [
+      { name: "ReactJS" },
+      { name: "Firebase" },
+      { name: "Paystack" },
+      { name: "TailwindCSS" },
+    ],
     image: "/assets/work/project2.png",
-    live: "",
+    live: "https://groupgo.vercel.app",
     github: "",
   },
   {
     num: "03",
-    category: "frontend",
-    title: "project 1",
+    category: "Fullstack",
+    title: "Afrodevs",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum beatae doloremque iste?",
-    stack: [{ name: "Html 5" }, { name: "Html 5" }, { name: "Javascript" }],
+      "This is the site for the freelance company Afrodevs. I worked with teammates to build up the design given",
+    stack: [
+      { name: "ReactJS" },
+      { name: "NodeJS" },
+      { name: "Framer Motion" },
+      { name: "Tailwind CSS" },
+    ],
     image: "/assets/work/project3.png",
-    live: "",
+    live: "https://afrodevs.com",
     github: "",
+  },
+  {
+    num: "04",
+    category: "Frontend",
+    title: "Guitar Lessons Page",
+    description:
+      "This is just a frontend site for a sample guitar lessons page.",
+    stack: [{ name: "ReactJS" }, { name: "CSS" }],
+    image: "/assets/work/project4.png",
+    live: "https://guitar-lessons-page.vercel.app/",
+    github: "https://github.com/kijuchihe/guitar-lessons-page",
   },
 ];
 
@@ -80,16 +104,21 @@ const Work = () => {
               <div className="text-8xl leading-none font-extrabold text-transparent text-outline">
                 {project.num}
               </div>
-              {/* Project category */}
+              {/* Title */}
               <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
+                {project.title}
+              </h2>
+              {/* Project category */}
+              <h2 className="text-[22px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
                 {project.category} project
               </h2>
+
               {/* Description */}
               <p className="text-white/60">{project.description}</p>
               {/* stack */}
               <ul className="flex gap-4">
                 {project.stack.map((item, index) => (
-                  <li key={index} className="text-xl text-accent">
+                  <li key={index} className="text-base text-accent">
                     {/* remove the last comma */}
                     {item.name} {index !== project.stack.length - 1 && ","}
                   </li>
@@ -113,18 +142,20 @@ const Work = () => {
                   </TooltipProvider>
                 </Link>
                 {/* Github project button */}
-                <Link href={project.github}>
-                  <TooltipProvider delayDuration={100}>
-                    <Tooltip>
-                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                        <BsGithub className="text-white group-hover:text-accent text-3xl" />
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p>Github repository</p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-                </Link>
+                {project.github.length > 1 && (
+                  <Link href={project.github}>
+                    <TooltipProvider delayDuration={100}>
+                      <Tooltip>
+                        <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                          <BsGithub className="text-white group-hover:text-accent text-3xl" />
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>Github repository</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  </Link>
+                )}
               </div>
             </div>
           </div>
