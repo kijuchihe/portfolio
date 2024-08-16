@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import {
   FaHtml5,
@@ -7,59 +7,65 @@ import {
   FaReact,
   // FaFigma,
   FaNodeJs,
-} from "react-icons/fa";
+  FaFigma,
+} from 'react-icons/fa';
 import {
   SiTailwindcss,
   SiDjango,
   SiNextdotjs,
   SiAmazonaws,
   SiDocker,
-  SiPython
-} from "react-icons/si";
+  SiPython,
+} from 'react-icons/si';
 
 // about data
 const about = {
-  title: "About me",
+  title: 'About me',
   description:
-    "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis ipsam quod pariatur!",
+    'A dedicated full-stack engineer who always strives for excellence, embraces continuous learning, and aims to make a positive impact on any team.',
   info: [
-    { fieldName: "Name", fieldValue: "Luke Coleman" },
-    { fieldName: "Phone", fieldValue: "+234 903 581 0428" },
-    { fieldName: "Experience", fieldValue: "3+ Years" },
-    { fieldName: "Skype", fieldValue: "kijuchihe" },
-    { fieldName: "Nationality", fieldValue: "Nigerian/Ghanaian" },
-    { fieldName: "Email", fieldValue: "kijuchihe@gmail.com" },
-    { fieldName: "Freelance", fieldValue: "Available" },
-    { fieldName: "Languages", fieldValue: "English" },
+    { fieldName: 'Name', fieldValue: 'Kingsley Ihemelandu' },
+    { fieldName: 'Phone', fieldValue: '+234 903 581 0428' },
+    { fieldName: 'Experience', fieldValue: '3+ Years' },
+    { fieldName: 'Twitter', fieldValue: 'kijuchihe' },
+    { fieldName: 'Nationality', fieldValue: 'Nigerian' },
+    { fieldName: 'Email', fieldValue: 'kingiheme2005@gmail.com' },
+    { fieldName: 'Freelance', fieldValue: 'Available' },
+    { fieldName: 'Languages', fieldValue: 'English' },
   ],
 };
 
 // experience data
 
 const experience = {
-  icon: "",
-  title: "My experience",
-  description: "",
+  icon: '',
+  title: 'My experience',
+  description: '',
   items: [
     {
-      company: "Afrodevs",
-      position: "Full Stack Developer",
-      duration: "2024 - Present",
+      company: 'Afrodevs',
+      position: 'Full Stack Engineer',
+      duration: '2024 - Present',
     },
     {
-      company: "Simesta AI",
-      position: "Lead Engineer",
-      duration: "2024 - Present",
+      company: 'Simesta AI',
+      position: 'Lead Engineer',
+      duration: '2024 - Present',
     },
     {
-      company: "Kmavi",
-      position: "Founder",
-      duration: "2024 - Present",
+      company: 'Kmavi',
+      position: 'Founder',
+      duration: '2024 - Present',
     },
     {
-      company: "Eccles IT Ltd.",
-      position: "Full Stack Engineering Intern",
-      duration: "2022 - Present",
+      company: 'Octave Inc.',
+      position: 'Frontend Developer',
+      duration: '2023 - 2023',
+    },
+    {
+      company: 'Eccles IT Ltd.',
+      position: 'Full Stack Engineering Intern',
+      duration: '2022 - 2022',
     },
   ],
 };
@@ -67,48 +73,48 @@ const experience = {
 // education data
 
 const education = {
-  icon: "",
-  title: "My Education",
-  description: "",
+  icon: '',
+  title: 'My Education',
+  description: '',
   items: [
     {
-      institution: "University of Lagos",
-      degree: "BSc. Systems Engineering",
-      duration: "2020 - 2027",
+      institution: 'University of Lagos',
+      degree: 'BSc. Systems Engineering',
+      duration: '2020 - 2027',
     },
   ],
 };
 
 const skills = {
-  title: "My skills",
-  description: "",
-  slillList: [
-    { icon: <FaHtml5 />, name: "HTML5" },
-    { icon: <FaCss3 />, name: "CSS3" },
-    { icon: <FaJs />, name: "JavaScript" },
-    { icon: <SiPython />, name: "Python" },
-    { icon: <FaReact />, name: "ReactJS" },
-    // { icon: <FaFigma />, name: "Figma" },
-    { icon: <FaNodeJs />, name: "NodeJS" },
-    { icon: <SiTailwindcss />, name: "Tailwind CSS" },
-    // { icon: <SiDjango />, name: "Django" },
-    { icon: <SiNextdotjs />, name: "Next.js" },
-    { icon: <SiAmazonaws />, name: "Amazon Web Services" },
-    { icon: <SiDocker />, name: "Docker" },
+  title: 'My skills',
+  description: '',
+  skillList: [
+    { icon: <FaHtml5 />, name: 'HTML5' },
+    { icon: <FaCss3 />, name: 'CSS3' },
+    { icon: <FaJs />, name: 'JavaScript' },
+    { icon: <SiPython />, name: 'Python' },
+    { icon: <FaReact />, name: 'ReactJS' },
+    { icon: <FaFigma />, name: 'Figma' },
+    { icon: <FaNodeJs />, name: 'NodeJS' },
+    { icon: <SiTailwindcss />, name: 'Tailwind CSS' },
+    { icon: <SiDjango />, name: 'Django' },
+    { icon: <SiNextdotjs />, name: 'Next.js' },
+    // { icon: <SiAmazonaws />, name: 'Amazon Web Services' },
+    // { icon: <SiDocker />, name: 'Docker' },
   ],
 };
 
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "@/components/ui/tooltip";
+} from '@/components/ui/tooltip';
 
-import { ScrollArea } from "@/components/ui/scroll-area";
-import { motion } from "framer-motion";
+import { ScrollArea } from '@/components/ui/scroll-area';
+import { motion } from 'framer-motion';
 
 const Resume = () => {
   return (
@@ -116,7 +122,7 @@ const Resume = () => {
       initial={{ opacity: 0 }}
       animate={{
         opacity: 1,
-        transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
+        transition: { delay: 2.4, duration: 0.4, ease: 'easeIn' },
       }}
       className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
     >
@@ -127,7 +133,7 @@ const Resume = () => {
         >
           <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
             <TabsTrigger value="experience">Experience</TabsTrigger>
-            <TabsTrigger value="education">Education</TabsTrigger>
+            {/* <TabsTrigger value="education">Education</TabsTrigger> */}
             <TabsTrigger value="skills">Skills</TabsTrigger>
             <TabsTrigger value="about">About me</TabsTrigger>
           </TabsList>
@@ -202,7 +208,7 @@ const Resume = () => {
                   </p>
                 </div>
                 <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
-                  {skills.slillList.map((skill, index) => (
+                  {skills.skillList.map((skill, index) => (
                     <li key={index}>
                       <TooltipProvider delayDuration={100}>
                         <Tooltip>
