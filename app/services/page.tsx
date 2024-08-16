@@ -1,40 +1,40 @@
-"use client";
+'use client';
 
-import { BsArrowDownRight } from "react-icons/bs";
-import Link from "next/link";
+import { BsArrowDownRight } from 'react-icons/bs';
+import Link from 'next/link';
 
 const services = [
   {
-    num: "01",
-    title: "Web Development",
+    num: '01',
+    title: 'Web Development',
     description:
-      "Lorem ipsum dolor sit amet, blanditiis optio adipisci ipsa quos iusto fugit delectus quas.",
-    href: "",
+      'Crafting engaging and responsive web experiences using the latest technologies and best practices.',
+    href: '',
   },
   {
-    num: "02",
-    title: "API development",
+    num: '02',
+    title: 'API development',
     description:
-      "Lorem ipsum dolor sit amet, blanditiis optio adipisci ipsa quos iusto fugit delectus quas.",
-    href: "",
+      'Designing and implementing secure, scalable, and efficient APIs to power your applications.',
+    href: '',
   },
   {
-    num: "03",
-    title: "Mobile App Development",
+    num: '03',
+    title: 'Mobile App Development',
     description:
-      "Lorem ipsum dolor sit amet, blanditiis optio adipisci ipsa quos iusto fugit delectus quas.",
-    href: "",
+      'Developing feature-rich and user-friendly mobile apps for both iOS and Android platforms.',
+    href: '',
   },
   {
-    num: "04",
-    title: "UI/UX Design",
+    num: '04',
+    title: 'UI/UX Design',
     description:
-      "Lorem ipsum dolor sit amet, blanditiis optio adipisci ipsa quos iusto fugit delectus quas.",
-    href: "",
+      'Creating intuitive and visually appealing user interfaces that enhance the overall digital experience.',
+    href: '',
   },
 ];
 
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
 
 const Services = () => {
   return (
@@ -44,7 +44,7 @@ const Services = () => {
           initial={{ opacity: 0 }}
           animate={{
             opacity: 1,
-            transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
+            transition: { delay: 2.4, duration: 0.4, ease: 'easeIn' },
           }}
           className="grid grid-cols-1 md:grid-cols-2 gap-[60px]"
         >
