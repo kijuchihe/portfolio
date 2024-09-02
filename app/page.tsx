@@ -4,7 +4,16 @@ import { FiDownload } from "react-icons/fi";
 import Socials from "@/components/Socials";
 import Photo from "@/components/Photo";
 import Stats from "@/components/Stats";
-const Home = () => {
+/**
+ * The homepage component.
+ *
+ * This component renders the homepage of the site, which includes a brief
+ * introduction of myself, a button to download my resume, and my social media
+ * links.
+ *
+ * @returns {JSX.Element} The JSX element for the homepage.
+ */
+const Home: React.FC = () => {
   return (
     <section className="h-full">
       <div className="container mx-auto h-full">

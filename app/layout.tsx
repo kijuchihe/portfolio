@@ -24,6 +24,13 @@ export const metadata: Metadata = {
       "This is the official portfolio website of Kingsley Ihemelandu",
     creator: "@kijuchihe",
     site: "https://kijuchihe.vercel.app",
+    // image: 'https://example.com/twitter-image.jpg'
+    images: [{
+        url: 'https://example.com/og-image.jpg', // replace with your own image
+        width: 1200,
+        height: 630,
+        alt: 'Kingsley Ihemelandu',
+      },],
   },
   keywords: [
     "Kingsley",
@@ -34,6 +41,21 @@ export const metadata: Metadata = {
     "React",
     "Next",
   ],
+  openGraph: {
+    type: 'website',
+    url: 'https://kijuchihe.vercel.app',
+    title: 'Kingsley Ihemelandu',
+    description: 'This is the official portfolio website of Kingsley Ihemelandu',
+    images: [
+      {
+        url: 'https://example.com/og-image.jpg', // replace with your own image
+        width: 1200,
+        height: 630,
+        alt: 'Kingsley Ihemelandu',
+      },
+    ],
+  },
+
 };
 
 export default function RootLayout({
