@@ -1,35 +1,90 @@
 [
   {
     "id": 1,
-    "role": "Software Engineer",
-    "company": "Nextvibe",
-    "type": "Full-time",
-    "location": "Lagos, Nigeria",
-    "startDate": "2024",
+    "role": "Engineering Intern",
+    "company": "IT Consortium",
+    "type": "Internship",
+    "location": "Ghana",
+    "startDate": "2025-05",
     "endDate": "Present",
-    "description": "Built and maintained the full backend infrastructure for a social event platform. Architected 11 core modules using NestJS, integrated PostgreSQL and Redis, and deployed on Render with Aiven cloud services.",
-    "tags": ["NestJS", "PostgreSQL", "Redis", "Docker", "TypeScript"]
+    "description": "Built a Direct Debit API sandbox with end-to-end testing using Java, HTML, CSS, and JavaScript. Developed a TransFlow downtime monitoring and escalation bot using n8n and Telegram. Optimized MySQL queries for ongoing database work and implemented a CI/CD pipeline deploying the sandbox environment to AWS EC2.",
+    "tags": ["Java", "MySQL", "n8n", "AWS", "CI/CD"]
   },
   {
     "id": 2,
-    "role": "Founder & CEO",
-    "company": "Spectroniq Limited",
-    "type": "Founder",
-    "location": "Lagos, Nigeria",
-    "startDate": "2023",
+    "role": "Lead Engineer",
+    "company": "NextvibeCo.",
+    "type": "Full-time",
+    "location": "Remote",
+    "startDate": "2025-01",
     "endDate": "Present",
-    "description": "Founded and registered a technology company focused on building software products and providing engineering services. RC-8203175.",
-    "tags": ["Entrepreneurship", "Product", "Engineering"]
+    "description": "Spearheaded Nextvibe, an event discovery platform based on user interests and location. Built and deployed a production NestJS backend covering 11 API modules with PostgreSQL, Redis caching, Swagger docs, and CI/CD through GitHub Actions and Docker. Integrated AI for gamification and recommendation systems and secured VPS access with firewall and SSH hardening.",
+    "tags": ["NestJS", "PostgreSQL", "Redis", "Docker", "GitHub Actions", "AI"]
   },
   {
     "id": 3,
-    "role": "Web Developer",
-    "company": "US-Ghana Chamber of Commerce",
-    "type": "Contract",
+    "role": "Backend Engineer",
+    "company": "Simesta AI",
+    "type": "Full-time",
     "location": "Remote",
-    "startDate": "2024",
-    "endDate": "2024",
-    "description": "Designed and developed the chamber's website using WordPress, Elementor, and Astra theme. Integrated event management via the My Calendar plugin.",
-    "tags": ["WordPress", "Elementor", "Web Design"]
+    "startDate": "2024-09",
+    "endDate": "2025-06",
+    "description": "Developed Simesta AI, an AI-powered learning app. Integrated CI/CD with GitHub Actions and Docker, implemented secure token-based authentication and OAuth, and optimized PostgreSQL queries to improve server response times.",
+    "tags": ["PostgreSQL", "CI/CD", "GitHub Actions", "Docker", "OAuth"]
+  },
+  {
+    "id": 4,
+    "role": "Software Engineer",
+    "company": "Kaza",
+    "type": "Full-time",
+    "location": "Remote",
+    "startDate": "2024-10",
+    "endDate": "2025-06",
+    "description": "Led development of a crypto-fintech mobile app using React Native, enabling portfolio management and fiat-to-crypto conversions. Integrated the Quidax API for real-time trading and balance management, implemented transaction history and conversion flows, optimized MongoDB queries, and secured the platform with token-based authentication.",
+    "tags": ["React Native", "MongoDB", "Quidax", "Token Authentication", "Fintech"]
+  },
+  {
+    "id": 5,
+    "role": "Software Engineering Intern",
+    "company": "Eccles IT Ltd.",
+    "type": "Internship",
+    "location": "UK",
+    "startDate": "2022-06",
+    "endDate": "2022-09",
+    "description": "Developed web application features using React, HTML, CSS, and Django, contributing to both frontend interfaces and backend database integration. Automated development tasks with Bash scripting and managed version control through GitLab while participating in code reviews.",
+    "tags": ["React", "Django", "Bash", "GitLab", "Web Development"]
+  },
+  {
+    "id": 6,
+    "role": "Software Engineer",
+    "company": "Indulgetix",
+    "type": "Full-time",
+    "location": "Remote",
+    "startDate": "2025-03",
+    "endDate": "2025-08",
+    "description": "Revamped a Flask backend and React frontend for improved maintainability, optimized MySQL queries to reduce data processing time, implemented Redis caching and a GitHub Actions/Docker CI/CD pipeline, and secured VPS hosting with firewall and SSH hardening.",
+    "tags": ["Flask", "React", "MySQL", "Redis", "GitHub Actions", "Docker"]
+  },
+  {
+    "id": 7,
+    "role": "Full-Stack Developer",
+    "company": "Octave Incorporations",
+    "type": "Full-time",
+    "location": "Remote",
+    "startDate": "2023-01",
+    "endDate": "2023-06",
+    "description": "Built responsive frontend interfaces with React and implemented scalable backend services using Node.js. Developed secure web applications with Django while collaborating with cross-functional teams to analyze requirements, conduct testing, and ensure application performance.",
+    "tags": ["React", "Node.js", "Django", "Frontend", "Backend"]
+  },
+  {
+    "id": 8,
+    "role": "Founder & CEO / Software Engineer",
+    "company": "Spectroniq Limited",
+    "type": "Founder",
+    "location": "Lagos, Nigeria",
+    "startDate": "2025-01",
+    "endDate": "Present",
+    "description": "Founded Spectroniq Limited and delivered custom software solutions, including StackSculptor, an AI-powered tool for generating PRDs, system designs, and deliverables. Managed end-to-end client projects using Node.js, React, and Django.",
+    "tags": ["Entrepreneurship", "AI", "Node.js", "React", "Django"]
   }
 ]

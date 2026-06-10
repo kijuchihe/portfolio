@@ -1,14 +1,22 @@
 [
   {
     "id": 1,
-    "role": "Founder & Lead",
-    "organization": "The Kaizen Project",
-    "period": "2024 — Present",
-    "description": "A community impact initiative targeting personal development and health awareness. Applying for the Millennium Fellowship with SDG 3 focus, targeting 100 lives across 6 sessions.",
-    "tags": ["Community", "SDG 3", "Leadership"]
+    "role": "Student Ambassador",
+    "organization": "Cowrywise",
+    "period": "June 2023 — Present",
+    "description": "Represent Cowrywise on campus, promoting financial literacy and driving student awareness of personal finance and investment tools. Organize workshops, events, and outreach initiatives to expand Cowrywise's presence within the student community.",
+    "tags": ["Fintech", "Financial Literacy", "Campus"]
   },
   {
     "id": 2,
+    "role": "Founder",
+    "organization": "The Kaizen Project",
+    "period": "April 2026 — Present",
+    "description": "Founded and lead The Kaizen Project, a personal development initiative built around seven core life pillars to drive continuous growth across physical, technical, spiritual, financial, and relational domains.",
+    "tags": ["Leadership", "Personal Development", "Community"]
+  },
+  {
+    "id": 3,
     "role": "Millennium Fellow (Applicant)",
     "organization": "Millennium Fellowship — UNAI",
     "period": "2025",
@@ -16,19 +24,11 @@
     "tags": ["UN", "Fellowship", "SDG 3"]
   },
   {
-    "id": 3,
-    "role": "Campus Ambassador",
-    "organization": "Cowrywise",
-    "period": "2024 — Present",
-    "description": "Representing Cowrywise on campus, promoting financial literacy and smart savings habits among students at the University of Lagos.",
-    "tags": ["Fintech", "Financial Literacy", "Campus"]
-  },
-  {
     "id": 4,
     "role": "Public Relations Officer",
     "organization": "Igbo Students Union — UNILAG",
     "period": "2024 — Present",
-    "description": "Managing communications and public relations for the Igbo Students Union at UNILAG. Also edits and produces the union's monthly podcast.",
+    "description": "Manage communications and public relations for the Igbo Students Union at UNILAG and produce the union's monthly podcast.",
     "tags": ["Leadership", "Communications", "Podcast"]
   },
   {

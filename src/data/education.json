@@ -1,29 +1,29 @@
 [
   {
     "id": 1,
-    "degree": "B.Eng. Systems Engineering",
+    "degree": "BSc. Systems Engineering",
     "institution": "University of Lagos",
     "location": "Lagos, Nigeria",
-    "startDate": "2021",
-    "endDate": "2026",
-    "description": "A 5-year engineering program covering systems design, control theory, embedded systems, mechatronics, numerical methods, and stochastic models. Currently in Year 4.",
+    "startDate": "2020-10",
+    "endDate": "Present",
+    "description": "Pursuing Systems Engineering with a 3.72/5.0 CGPA. Focused on data structures, computer programming, NLP, AI, robotics, control systems, embedded systems, and systems modelling.",
     "highlights": [
-      "Completed robotics projects using ROS2, TurtleBot3 and YOLOv8",
-      "Strong focus on numerical methods, simulation and control systems",
-      "Active in the Igbo Students Union as Public Relations Officer"
+      "Completed ROS setup and navigation labs with TurtleBot3 and Gazebo",
+      "Implemented autonomous detection and movement systems with Arduino/ESP32",
+      "Designed PID controllers and sensor integration solutions for embedded systems"
     ],
     "coursework": [
-      "Control Systems Analysis",
-      "Mechatronics",
+      "Data Structures and Algorithms",
+      "Computer Programming",
+      "NLP and AI",
+      "Robotics & Automation",
+      "Control Systems Engineering",
       "Embedded Systems",
-      "Systems Simulation",
-      "Numerical Methods",
-      "Engineering Statistics",
-      "Stochastic Models",
-      "Digital Electronics",
-      "Signal Processing",
-      "Engineering Mathematics"
+      "Microprocessors",
+      "Signals & Systems",
+      "Linear Algebra",
+      "Differential Equations"
     ],
-    "tags": ["Systems Engineering", "Robotics", "Control Theory", "Embedded Systems"]
+    "tags": ["Systems Engineering", "Robotics", "Embedded Systems", "Control Systems"]
   }
 ]

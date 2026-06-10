@@ -1,34 +1,26 @@
 [
   {
     "category": "Languages",
-    "skills": ["Python", "TypeScript", "JavaScript", "Go", "C", "C++", "Java", "Bash"]
+    "skills": ["Python", "JavaScript", "TypeScript", "Go", "Java", "C++", "Rust"]
   },
   {
-    "category": "Frontend",
-    "skills": ["React", "Next.js", "Tailwind CSS", "HTML", "CSS"]
+    "category": "Frameworks",
+    "skills": ["React", "React Native", "Next.js", "Node.js", "Express.js", "Django", "Flask", "Redux", "Jest", "Cypress", "Pytest"]
   },
   {
-    "category": "Backend",
-    "skills": ["NestJS", "Node.js", "Express", "Django", "REST API", "GraphQL"]
+    "category": "Robotics & Systems",
+    "skills": ["Embedded Systems", "Arduino", "ESP32", "ROS", "Gazebo", "TurtleBot3", "PID Controllers", "Sensor Integration", "MATLAB"]
   },
   {
     "category": "Databases",
-    "skills": ["PostgreSQL", "MySQL", "Redis", "Prisma"]
+    "skills": ["PostgreSQL", "MongoDB", "MySQL", "Redis"]
   },
   {
     "category": "DevOps & Cloud",
-    "skills": ["Docker", "AWS", "Linux", "Git", "GitHub Actions", "Render", "Nginx"]
-  },
-  {
-    "category": "AI & ML",
-    "skills": ["YOLOv8", "OpenCV", "PyTorch", "TensorFlow", "Scikit-learn", "Pandas", "NumPy"]
-  },
-  {
-    "category": "Robotics",
-    "skills": ["ROS2", "TurtleBot3", "Gazebo", "Arduino", "ESP32"]
+    "skills": ["Linux", "AWS", "Bash", "Git", "Docker", "GitHub Actions", "GitLab CI"]
   },
   {
     "category": "Tools",
-    "skills": ["Postman", "Swagger", "Figma", "VS Code", "Notion"]
+    "skills": ["Tailwind CSS", "ShadCN", "Bootstrap", "AI Tools"]
   }
 ]
