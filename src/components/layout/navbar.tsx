@@ -81,7 +81,7 @@ export default function Navbar() {
         {/* Contact Button - Right */}
         <div className="hidden md:flex items-center">
           <Link
-            href="/#contact"
+            href="/contact"
             className="px-5 py-2 text-sm font-medium rounded-lg bg-[var(--color-accent)] text-white hover:opacity-90 transition-opacity"
           >
             Contact
@@ -125,7 +125,7 @@ export default function Navbar() {
               </Link>
             ))}
             <Link
-              href="/#contact"
+              href="/contact"
               onClick={() => setMobileOpen(false)}
               className="px-5 py-2 text-sm font-medium rounded-lg bg-[var(--color-accent)] text-white text-center"
             >
