@@ -75,6 +75,9 @@ const playfair = Playfair_Display({
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className="h-full antialiased">
+      <head>
+        <meta name="google-site-verification" content="15UBHtKiHPbwXWuFU-k1TRejZjTK0nlRQGBFhdcI0h0" />
+      </head>
       <body className={`${inter.variable} ${playfair.variable} min-h-full flex flex-col`}>
         <Navbar />
         {children}
@@ -83,6 +86,3 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     </html>
   )
 }
-
-
-
