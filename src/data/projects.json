@@ -1,5 +1,44 @@
 [
   {
+    "id": 6,
+    "title": "SocioBoom",
+    "description": "A social media growth and scheduling platform — post scheduling on a shared content calendar, team collaboration, and three AI-powered growth tools: Review Poster, Pain-Point Discovery, and Content Strategy.",
+    "type": ["Full Stack"],
+    "language": ["TypeScript"],
+    "tools": ["Next.js", "Express", "Prisma", "PostgreSQL"],
+    "date": "2026",
+    "image": "",
+    "liveUrl": "https://socioboom-frontend.vercel.app",
+    "githubUrl": "",
+    "featured": true
+  },
+  {
+    "id": 7,
+    "title": "Arete",
+    "description": "A gamified self-development Android app inspired by Solo Leveling — daily quests across Spiritual, Physical, and Mental pillars, XP, streaks, and ranks from F to SSS.",
+    "type": ["Mobile", "Full Stack"],
+    "language": ["TypeScript"],
+    "tools": ["React Native", "Expo", "NestJS"],
+    "date": "2026",
+    "image": "",
+    "liveUrl": "",
+    "githubUrl": "",
+    "featured": true
+  },
+  {
+    "id": 8,
+    "title": "BTP (Big Tech Prep)",
+    "description": "An open source, AI-powered interview prep platform — semantic job matching, a Socratic AI coach for DSA practice, and live mock interviews across behavioral, technical, and system design formats.",
+    "type": ["Full Stack", "Backend"],
+    "language": ["TypeScript", "Python", "Go"],
+    "tools": ["Next.js", "NestJS", "FastAPI", "Claude API", "PostgreSQL", "Redis"],
+    "date": "2026",
+    "image": "",
+    "liveUrl": "",
+    "githubUrl": "",
+    "featured": true
+  },
+  {
     "id": 1,
     "title": "UNILAG Map",
     "description": "Built an interactive University of Lagos map using React and Canvas. Applied Dijkstra's algorithm for optimal pathfinding, providing a foundation for motion planning and coordination logic in autonomous systems.",
@@ -63,5 +102,70 @@
     "liveUrl": "",
     "githubUrl": "",
     "featured": false
+  },
+  {
+    "id": 9,
+    "title": "Nextvibe",
+    "description": "A social event platform — discover and attend events, create postcards with digital backdrops, compete in games, and connect with other attendees in real time.",
+    "type": ["Full Stack"],
+    "language": ["TypeScript"],
+    "tools": ["Next.js", "NestJS", "Prisma", "PostgreSQL", "Socket.IO", "Redis"],
+    "date": "2026",
+    "image": "",
+    "liveUrl": "https://mynextvibe.com",
+    "githubUrl": "",
+    "featured": true
+  },
+  {
+    "id": 10,
+    "title": "Munakalati (Muna)",
+    "description": "The site for Muna, a nonprofit building Africa's children's media ecosystem — literacy and publishing programs, a magazine, TV, and studio arm, plus donate/volunteer/partner pathways, all managed through an embedded Sanity Studio.",
+    "type": ["Full Stack", "Frontend"],
+    "language": ["TypeScript"],
+    "tools": ["Next.js", "Sanity"],
+    "date": "2026",
+    "image": "",
+    "liveUrl": "https://muna-world.org",
+    "githubUrl": "",
+    "featured": true
+  },
+  {
+    "id": 11,
+    "title": "Kingsley Iheme — Ghostwriter Portfolio",
+    "description": "An editorial portfolio and content site for a ghostwriter and consultant — self-managed blog and book catalog via an embedded Sanity Studio, with Cal.com for consulting bookings.",
+    "type": ["Full Stack", "Frontend"],
+    "language": ["TypeScript"],
+    "tools": ["Next.js", "Tailwind CSS", "Sanity", "Cal.com"],
+    "date": "2026",
+    "image": "",
+    "liveUrl": "",
+    "githubUrl": "",
+    "featured": true
+  },
+  {
+    "id": 12,
+    "title": "Direct Debit API Sandbox",
+    "description": "A Direct Debit API sandbox with end-to-end testing, built during a software engineering internship at IT Consortium (Ghana) — not a Spectroniq project. Deployed via a CI/CD pipeline to AWS EC2.",
+    "type": ["Backend", "DevOps"],
+    "language": ["Java"],
+    "tools": ["Java", "Docker", "AWS"],
+    "date": "2025",
+    "image": "",
+    "liveUrl": "",
+    "githubUrl": "",
+    "featured": true
+  },
+  {
+    "id": 13,
+    "title": "Spectroniq Website",
+    "description": "The marketing site for Spectroniq Limited — products, portfolio, and services, all data-driven so new work ships without touching the layout code.",
+    "type": ["Frontend"],
+    "language": ["TypeScript"],
+    "tools": ["Next.js", "Tailwind CSS", "Framer Motion", "Radix UI"],
+    "date": "2025",
+    "image": "",
+    "liveUrl": "https://spectroniqlimited.com",
+    "githubUrl": "",
+    "featured": true
   }
 ]

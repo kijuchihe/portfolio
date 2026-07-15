@@ -20,9 +20,9 @@ type Project = {
   featured: boolean
 }
 
-const types = ['Backend', 'Frontend', 'Full Stack', 'DevOps', 'ML', 'Robotics', 'Cybersecurity']
+const types = ['Backend', 'Frontend', 'Full Stack', 'Mobile', 'DevOps', 'ML', 'Robotics', 'Cybersecurity']
 const languages = ['TypeScript', 'Python', 'JavaScript', 'Go', 'C', 'C++', 'Java', 'Bash']
-const dates = ['2024', '2023', '2022']
+const dates = ['2026', '2025', '2024', '2023', '2022']
 
 export default function ProjectsClient({ projects }: { projects: Project[] }) {
   const [search, setSearch] = useState('')
