@@ -7,7 +7,7 @@
     "language": ["TypeScript"],
     "tools": ["Next.js", "Express", "Prisma", "PostgreSQL"],
     "date": "2026",
-    "image": "",
+    "image": "/images/projects/socioboom.png",
     "liveUrl": "https://socioboom-frontend.vercel.app",
     "githubUrl": "",
     "featured": true
@@ -31,11 +31,18 @@
     "description": "An open source, AI-powered interview prep platform — semantic job matching, a Socratic AI coach for DSA practice, and live mock interviews across behavioral, technical, and system design formats.",
     "type": ["Full Stack", "Backend"],
     "language": ["TypeScript", "Python", "Go"],
-    "tools": ["Next.js", "NestJS", "FastAPI", "Claude API", "PostgreSQL", "Redis"],
+    "tools": [
+      "Next.js",
+      "NestJS",
+      "FastAPI",
+      "Claude API",
+      "PostgreSQL",
+      "Redis"
+    ],
     "date": "2026",
     "image": "",
     "liveUrl": "",
-    "githubUrl": "",
+    "githubUrl": "https://github.com/spectroniqltd/btp",
     "featured": true
   },
   {
@@ -46,9 +53,9 @@
     "language": ["JavaScript", "React"],
     "tools": ["React", "Canvas", "Algorithms"],
     "date": "2024",
-    "image": "",
-    "liveUrl": "",
-    "githubUrl": "",
+    "image": "/images/projects/unilag-map.png",
+    "liveUrl": "https://unilag-pathfinder.vercel.app",
+    "githubUrl": "https://github.com/kingsleydaprime/unilag-pathfinder",
     "featured": true
   },
   {
@@ -61,7 +68,7 @@
     "date": "2024",
     "image": "",
     "liveUrl": "",
-    "githubUrl": "",
+    "githubUrl": "https://github.com/kingsleydaprime/pms",
     "featured": false
   },
   {
@@ -74,7 +81,7 @@
     "date": "2024",
     "image": "",
     "liveUrl": "",
-    "githubUrl": "",
+    "githubUrl": "https://github.com/kingsleydaprime/node-cli-db-backup-utility",
     "featured": false
   },
   {
@@ -100,7 +107,7 @@
     "date": "2024",
     "image": "",
     "liveUrl": "",
-    "githubUrl": "",
+    "githubUrl": "https://github.com/kingsleydaprime/go-http-server",
     "featured": false
   },
   {
@@ -109,9 +116,16 @@
     "description": "A social event platform — discover and attend events, create postcards with digital backdrops, compete in games, and connect with other attendees in real time.",
     "type": ["Full Stack"],
     "language": ["TypeScript"],
-    "tools": ["Next.js", "NestJS", "Prisma", "PostgreSQL", "Socket.IO", "Redis"],
+    "tools": [
+      "Next.js",
+      "NestJS",
+      "Prisma",
+      "PostgreSQL",
+      "Socket.IO",
+      "Redis"
+    ],
     "date": "2026",
-    "image": "",
+    "image": "/images/projects/nextvibe.png",
     "liveUrl": "https://mynextvibe.com",
     "githubUrl": "",
     "featured": true
@@ -124,7 +138,7 @@
     "language": ["TypeScript"],
     "tools": ["Next.js", "Sanity"],
     "date": "2026",
-    "image": "",
+    "image": "/images/projects/muna.png",
     "liveUrl": "https://muna-world.org",
     "githubUrl": "",
     "featured": true
@@ -137,8 +151,8 @@
     "language": ["TypeScript"],
     "tools": ["Next.js", "Tailwind CSS", "Sanity", "Cal.com"],
     "date": "2026",
-    "image": "",
-    "liveUrl": "",
+    "image": "/images/projects/kingsley-iheme.png",
+    "liveUrl": "https://kingsleyiheme.com",
     "githubUrl": "",
     "featured": true
   },
@@ -152,7 +166,7 @@
     "date": "2025",
     "image": "",
     "liveUrl": "",
-    "githubUrl": "",
+    "githubUrl": "https://github.com/kingsleydaprime/direct-debit-sandbox-java",
     "featured": true
   },
   {
@@ -163,7 +177,7 @@
     "language": ["TypeScript"],
     "tools": ["Next.js", "Tailwind CSS", "Framer Motion", "Radix UI"],
     "date": "2025",
-    "image": "",
+    "image": "/images/projects/spectroniq.png",
     "liveUrl": "https://spectroniqlimited.com",
     "githubUrl": "",
     "featured": true
@@ -177,7 +191,7 @@
     "tools": ["Vitest", "tsup"],
     "date": "2026",
     "image": "",
-    "liveUrl": "",
+    "liveUrl": "https://www.npmjs.com/package/@spectroniqltd/json-healer",
     "githubUrl": "https://github.com/spectroniqltd/json-healer",
     "featured": true
   },
@@ -190,7 +204,7 @@
     "tools": ["Vitest", "tsup"],
     "date": "2026",
     "image": "",
-    "liveUrl": "",
+    "liveUrl": "https://www.npmjs.com/package/@spectroniqltd/strictenv",
     "githubUrl": "https://github.com/spectroniqltd/strictenv",
     "featured": true
   }
