@@ -167,5 +167,31 @@
     "liveUrl": "https://spectroniqlimited.com",
     "githubUrl": "",
     "featured": true
+  },
+  {
+    "id": 14,
+    "title": "json-healer",
+    "description": "Zero-dependency TypeScript utility that repairs malformed JSON from LLM output — markdown fences, chatter, trailing commas, truncated structures, smart quotes — and returns valid, typed parsed JSON.",
+    "type": ["Library", "Open Source"],
+    "language": ["TypeScript"],
+    "tools": ["Vitest", "tsup"],
+    "date": "2026",
+    "image": "",
+    "liveUrl": "",
+    "githubUrl": "https://github.com/spectroniqltd/json-healer",
+    "featured": true
+  },
+  {
+    "id": 15,
+    "title": "strictenv",
+    "description": "Zero-dependency TypeScript micro-library that turns process.env into a typed, validated, auto-coercing object — halts the process with a readable terminal report if anything required is missing or invalid, instead of failing later at runtime.",
+    "type": ["Library", "Open Source"],
+    "language": ["TypeScript"],
+    "tools": ["Vitest", "tsup"],
+    "date": "2026",
+    "image": "",
+    "liveUrl": "",
+    "githubUrl": "https://github.com/spectroniqltd/strictenv",
+    "featured": true
   }
 ]
