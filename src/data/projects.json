@@ -8,7 +8,7 @@
     "tools": ["Next.js", "Express", "Prisma", "PostgreSQL"],
     "date": "2026",
     "image": "/images/projects/socioboom.png",
-    "liveUrl": "https://socioboom-frontend.vercel.app",
+    "liveUrl": "https://socioboom.spectroniqlimited.com",
     "githubUrl": "",
     "featured": true
   },
@@ -193,6 +193,19 @@
     "image": "",
     "liveUrl": "https://www.npmjs.com/package/@spectroniqltd/json-healer",
     "githubUrl": "https://github.com/spectroniqltd/json-healer",
+    "featured": true
+  },
+  {
+    "id": 16,
+    "title": "Gees Arise",
+    "description": "An accountability app for a small, tight-knit friend circle — set personal tasks, attach proof, and let your circle audit whether you actually did them. Miss it or fake it and you land in the Hall of Shame until the group votes you clear.",
+    "type": ["Full Stack"],
+    "language": ["TypeScript"],
+    "tools": ["Next.js", "Supabase", "Tailwind CSS"],
+    "date": "2026",
+    "image": "",
+    "liveUrl": "https://geesarise.spectroniqlimited.com",
+    "githubUrl": "",
     "featured": true
   },
   {
