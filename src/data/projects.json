@@ -190,7 +190,7 @@
     "language": ["TypeScript"],
     "tools": ["Vitest", "tsup"],
     "date": "2026",
-    "image": "",
+    "image": "/images/projects/json-healer.png",
     "liveUrl": "https://www.npmjs.com/package/@spectroniqltd/json-healer",
     "githubUrl": "https://github.com/spectroniqltd/json-healer",
     "featured": true
@@ -203,7 +203,7 @@
     "language": ["TypeScript"],
     "tools": ["Next.js", "Supabase", "Tailwind CSS"],
     "date": "2026",
-    "image": "",
+    "image": "/images/projects/geesarise.png",
     "liveUrl": "https://geesarise.spectroniqlimited.com",
     "githubUrl": "",
     "featured": true
@@ -216,7 +216,7 @@
     "language": ["TypeScript"],
     "tools": ["Vitest", "tsup"],
     "date": "2026",
-    "image": "",
+    "image": "/images/projects/strictenv.png",
     "liveUrl": "https://www.npmjs.com/package/@spectroniqltd/strictenv",
     "githubUrl": "https://github.com/spectroniqltd/strictenv",
     "featured": true
