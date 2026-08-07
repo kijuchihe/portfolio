@@ -163,8 +163,8 @@
     "type": ["Backend", "DevOps"],
     "language": ["Java"],
     "tools": ["Java", "Docker", "AWS"],
-    "date": "2025",
-    "image": "",
+    "date": "2026",
+    "image": "/images/projects/direct-debit-sandbox.png",
     "liveUrl": "",
     "githubUrl": "https://github.com/kingsleydaprime/direct-debit-sandbox-java",
     "featured": true
@@ -220,5 +220,18 @@
     "liveUrl": "https://www.npmjs.com/package/@spectroniqltd/strictenv",
     "githubUrl": "https://github.com/spectroniqltd/strictenv",
     "featured": true
+  },
+  {
+    "id": 17,
+    "title": "High-Volume Data Pipeline",
+    "description": "A pipeline that ingests large CSV datasets, distributes work through RabbitMQ to 6 parallel consumers, and batch-inserts into MySQL — processing 5.8M rows per run. Uniqueness is enforced in the application layer rather than the database to keep inserts fast under parallel load, Flyway manages schema migrations, and the whole stack runs reproducibly under Docker Compose.",
+    "type": ["Backend", "Data Engineering"],
+    "language": ["Java"],
+    "tools": ["Java", "RabbitMQ", "MySQL", "Flyway", "Docker Compose"],
+    "date": "2026",
+    "image": "/images/projects/record-id-generator.png",
+    "liveUrl": "",
+    "githubUrl": "https://github.com/kingsleydaprime/record-id-generator-java",
+    "featured": false
   }
 ]
